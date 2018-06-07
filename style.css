@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Ya';
+    src: url('./rsc/ya.ttf');
+}
+
+@font-face {
+    font-family: 'YaBold';
+    src: url('./rsc/ya_bold.ttf');
+}
