@@ -1,21 +1,39 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>넨도 짤 생성기</title>
+        <meta property="og:title" content="넨도 짤 생성기">
+        <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
         <link rel="stylesheet" href="style.css"> 
     </head>
 
     <body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <form>
-            <img style="display:none" src="./rsc/nadesiko.png" />
+        <div>
+            <div class="choice">
+                <input type="radio" name="pic" id="pic_nadeshiko" value="nadeshiko" checked />
+                <label for="pic_nadeshiko">나데시코</label>
+            </div>
+            <div class="choice">
+                <input type="radio" name="pic" id="pic_aoba" value="aoba">
+                <label for ="pic_aoba">아오바</label>
+            </div>
+            <div>
+                <label for="line1">첫째 줄</label>
+                <input type="text" class="pic_text" id="line1"/>
+            </div>
+            <div>
+                <label for="line2">둘째 줄</label>
+                <input type="text" class="pic_text" id="line2"/>
+            </div>
 
-            <input type="text" id="line1" placeholder="첫줄"/>
-            <input type="text" id="line2" placeholder="둘째 줄"/>
             <a href="#" class="button" download="nendo.png" style="display:none;">Save</a>
-        </form>
+        </div>
 
-        <canvas id="canvas" />
+        <canvas id="canvas"></canvas>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

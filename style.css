@@ -1,9 +1,18 @@
 @font-face {
-    font-family: 'Ya';
-    src: url('./rsc/ya.ttf');
+  font-family: "YaBold";
+  src:
+    url("./rsc/yabold.woff2") format("woff2"); /* Modern Browsers */
+    url("./rsc/yabold.eot"); /* IE9 Compat Modes */
+    url("./rsc/yabold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: 'YaBold';
-    src: url('./rsc/ya_bold.ttf');
+div.choice {
+    display: inline-block;
+}
+
+div > label {
+    display: inline-block;
 }
